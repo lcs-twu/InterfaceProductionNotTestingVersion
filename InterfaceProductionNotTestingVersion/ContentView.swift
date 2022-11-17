@@ -21,6 +21,7 @@ struct ContentView: View {
                         Spacer()
                         Text("0:00")
                             .frame(height: 100)
+                        
                     }
                     
                     HStack{
@@ -43,6 +44,7 @@ struct ContentView: View {
                             .frame(height: 100)
                     }
                     
+                    
                     HStack{
                         VStack{
                             Text("need add")
@@ -55,7 +57,6 @@ struct ContentView: View {
                 }
                 .navigationTitle("WorldClock")
                 .toolbar{EditButton()}
-                .toolbar{UIButton(.plus)}
             }
         }
         .padding()
