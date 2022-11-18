@@ -12,48 +12,13 @@ struct ContentView: View {
         VStack {
             NavigationView{
                 List{
-                    HStack{
-                        
-                        VStack{
-                            Text("need add")
-                            Text("Vancouver")
-                        }
-                        Spacer()
-                        Text("0:00")
-                            .frame(height: 100)
-                        
-                    }
+                    ClockPreview(text1: "need add", text2: "Vancouver", text3: "0:00")
                     
-                    HStack{
-                        VStack{
-                            Text("need add")
-                            Text("Toronto")
-                        }
-                        Spacer()
-                        Text("0:01")
-                            .frame(height: 100)
-                    }
+                    ClockPreview(text1: "need add", text2: "Toronto", text3: "0:01")
                     
-                    HStack{
-                        VStack{
-                            Text("need add")
-                            Text("Beijing")
-                        }
-                        Spacer()
-                        Text("0:02")
-                            .frame(height: 100)
-                    }
+                    ClockPreview(text1: "need add", text2: "Beijing", text3: "0:02")
                     
-                    
-                    HStack{
-                        VStack{
-                            Text("need add")
-                            Text("Beijing")
-                        }
-                        Spacer()
-                        Text("0:02")
-                            .frame(height: 100)
-                    }
+                    ClockPreview(text1: "need add", text2: "Sydney", text3: "0:03")
                 }
                 .navigationTitle("WorldClock")
                 .toolbar{
@@ -63,7 +28,7 @@ struct ContentView: View {
                         }
                     }
                     ToolbarItemGroup(placement: .navigationBarTrailing){
-                        Button("Plus"){
+                        Button("+"){
                             print("plus")
                         }
                     }
