@@ -17,9 +17,16 @@ struct ClockPreview: View {
         HStack{
             
             VStack{
-                Text(text1).font(.caption2)
-                Text(text2).font(.title2)
+                HStack {
+                    Text(text1).font(.caption2)
+                    Spacer()
+                }
+                HStack {
+                    Text(text2).font(.title2)
+                    Spacer()
+                }
             }
+            
             Spacer()
             Text(text3).font(.largeTitle)
                 .frame(height: 100)
