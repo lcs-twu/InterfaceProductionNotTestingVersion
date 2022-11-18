@@ -18,7 +18,7 @@ struct ClockPreview: View {
             
             VStack{
                 Text(text1).font(.caption2)
-                Text(text2).font(.title3)
+                Text(text2).font(.title2)
             }
             Spacer()
             Text(text3).font(.largeTitle)

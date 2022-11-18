@@ -12,24 +12,28 @@ struct ContentView: View {
         VStack {
             NavigationView{
                 List{
-                    ClockPreview(text1: "need add", text2: "Vancouver", text3: "0:00")
-                    
-                    ClockPreview(text1: "need add", text2: "Toronto", text3: "0:01")
-                    
-                    ClockPreview(text1: "need add", text2: "Beijing", text3: "0:02")
-                    
-                    ClockPreview(text1: "need add", text2: "Sydney", text3: "0:03")
-                }
-                .navigationTitle("WorldClock")
-                .toolbar{
-                    ToolbarItemGroup(placement: .navigationBarLeading){
-                        Button("Edit"){
-                            print("Edit")
-                        }
+                    ScrollView{
+                        ClockPreview(text1: "Today, -3hrs", text2: "Vancouver", text3: "0:00")
+                        
+                        ClockPreview(text1: "Today, +0hrs", text2: "Toronto", text3: "0:01")
+                        
+                        ClockPreview(text1: "Tomorrow, +13hrs", text2: "Beijing", text3: "0:02")
+                        
+                        ClockPreview(text1: "Tomorrow, +14hrs", text2: "Tokyo", text3: "0:03")
+                        
+                        ClockPreview(text1: "Tomorrow, +16hrs", text2: "Sydney", text3: "0:04")
                     }
-                    ToolbarItemGroup(placement: .navigationBarTrailing){
-                        Button("+"){
-                            print("plus")
+                    .navigationTitle("WorldClock")
+                    .toolbar{
+                        ToolbarItemGroup(placement: .navigationBarLeading){
+                            Button("Edit"){
+                                print("Edit")
+                            }
+                        }
+                        ToolbarItemGroup(placement: .navigationBarTrailing){
+                            Button("+"){
+                                print("plus")
+                            }
                         }
                     }
                 }
