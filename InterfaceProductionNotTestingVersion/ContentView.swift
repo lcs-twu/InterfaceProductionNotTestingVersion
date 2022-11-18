@@ -56,7 +56,18 @@ struct ContentView: View {
                     }
                 }
                 .navigationTitle("WorldClock")
-                .toolbar{EditButton()}
+                .toolbar{
+                    ToolbarItemGroup(placement: .navigationBarLeading){
+                        Button("Edit"){
+                            print("Edit")
+                        }
+                    }
+                    ToolbarItemGroup(placement: .navigationBarTrailing){
+                        Button("Plus"){
+                            print("plus")
+                        }
+                    }
+                }
             }
         }
         .padding()
